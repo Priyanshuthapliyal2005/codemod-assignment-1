@@ -1,0 +1,16 @@
+# To see how to write a rule, check out the documentation at: https: //ast-grep.github.io/guide/rule-config.html
+  id: test - ast - grep
+language: bash - exp
+rule:
+  kind: import_statement
+fix: |
+  import { render } from '@testing-library/react';
+
+---
+rule:
+  kind: ERROR
+  pattern: |
+    expect(render(<$A />)).toMatchSnapshot();
+fix: |
+  const { container } = render(<$A />);
+  expect(container).toMatchSnapshot();

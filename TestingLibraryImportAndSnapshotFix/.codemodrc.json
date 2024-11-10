@@ -1,0 +1,21 @@
+{
+  "$schema": "https://codemod-utils.s3.us-west-1.amazonaws.com/configuration_schema.json",
+  "name": "testing-library-import-and-snapshot-fix",
+  "version": "1.0.0",
+  "engine": "ast-grep",
+  "private": false,
+  "arguments": [],
+  "meta": {
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/yourusername/testing-library-import-and-snapshot-fix.git"
+    },
+    "keywords": [
+      "codemod",
+      "testing-library",
+      "snapshot",
+      "refactor"
+    ]
+  }
+}
