@@ -1,0 +1,15 @@
+rule:
+  kind: expression_statement
+  pattern: "expect(wrapper.instance().
+			```
+			
+			```
+			).toHaveBeenCalled();"
+fix: |
+  await waitFor(() => {
+    expect(MyComponent.prototype.
+			```
+			
+			```
+			).toHaveBeenCalledTimes(1);
+  });

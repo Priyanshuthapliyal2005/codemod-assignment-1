@@ -1,0 +1,1 @@
+expect(wrapper.instance().componentDidMount).toHaveBeenCalled();
