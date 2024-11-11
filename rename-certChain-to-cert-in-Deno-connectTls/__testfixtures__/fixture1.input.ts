@@ -3,6 +3,8 @@ const conn = await Deno.connectTls({
   hostname: "192.0.2.1",
   port: 80,
   caCerts: [caCert],
-  certChain: Deno.readTextFileSync("./server.crt"),
+  
+        cert: Deno.readTextFileSync("./server.crt")
+      ,
   key: Deno.readTextFileSync("./server.key"),
 });
